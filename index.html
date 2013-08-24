@@ -1,0 +1,32 @@
+{% include 'includes/header' %}
+
+{% for item in pages %}
+  <article class="portfolio-piece item-{{forloop.index}}">
+
+    {% if item.meta.link %}
+      <a href="{{ item.meta.link }}" class="item-link">Visit</a>
+    {% endif %}
+
+    {% if item.assets.first %}
+      <span class="portfolio-bg" style="background-image:url({{item.assets.first.url}})"></span>      
+    {% endif %}
+
+    <div class="portfolio-info">
+      <h1 class="item-title">
+        {{ item.title }}
+      </h1>
+      <div class="item-desc">{{ item.body }}</div>
+
+      {% if item.meta.subtitle %}
+        <p class="item-subtitle">{{ item.meta.subtitle }}</p>
+      {% endif %}
+
+      {% if forloop.first %}
+        {% include 'includes/nav' %}
+      {% endif %}
+    </div>
+
+  </article>
+{% endfor %}
+
+{% include 'includes/footer' %}
