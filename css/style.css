@@ -296,7 +296,7 @@ body {
   font-size: 16px;
   text-rendering: optimizeLegibility;
   line-height: 1.4;
-  border: 5px solid black; }
+  border: 8px solid black; }
 
 img, object, embed {
   max-width: 100%; }
@@ -342,9 +342,15 @@ h1 {
     .nav-header .nav-item:hover {
       color: white; }
 
+.blog-page .nav-item {
+  color: #999999;
+  text-decoration: underline; }
+  .blog-page .nav-item:hover {
+    color: black; }
+
 .portfolio-piece {
   font-family: "proxima-nova", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   height: 400px;
   position: relative;
@@ -356,6 +362,9 @@ h1 {
     height: 100%;
     vertical-align: middle;
     margin-right: -0.25em; }
+  @media only screen and (max-width: 700px) {
+    .portfolio-piece {
+      height: auto; } }
   .portfolio-piece:hover .portfolio-bg {
     opacity: 0.13; }
 
@@ -381,7 +390,7 @@ h1 {
   position: relative;
   z-index: 2;
   line-height: 1.3;
-  padding: 80px 0;
+  padding: 80px 15px;
   display: inline-block;
   vertical-align: middle; }
   .portfolio-info p {
@@ -408,18 +417,24 @@ h1 {
 .item-subtitle {
   color: #bbbbbb; }
 
+.blog-page {
+  background: #fdfdfd;
+  color: #222222; }
+
 .writing-list {
   text-align: center; }
   .writing-list article:nth-child(2n) a {
     background: rgba(255, 255, 255, 0.03); }
 
 .post-link {
-  color: white;
+  color: #222222;
   text-decoration: none;
   display: block;
   padding: 150px 30px; }
-  .post-link:hover .text-bg {
-    color: rgba(255, 255, 255, 0.13); }
+  .post-link:hover {
+    color: black; }
+    .post-link:hover .text-bg {
+      color: rgba(0, 0, 0, 0.13); }
 
 .blog-item {
   position: relative;
@@ -433,7 +448,7 @@ h1 {
   transition: color 250ms ease;
   font-size: 20px;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.08);
+  color: rgba(0, 0, 0, 0.08);
   position: absolute;
   top: 0;
   left: 0;
