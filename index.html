@@ -8,7 +8,9 @@
     {% endif %}
 
     {% if item.assets.first %}
-      <span class="portfolio-bg" style="background-image:url({{item.assets.first.url}})"></span>      
+      <span class="portfolio-bg" style="background-image:url({{item.assets.first.url}})"></span>
+    {% elsif item.meta.background %}
+      <span class="portfolio-bg" style="background-image:url({{item.meta.background}})"></span>
     {% endif %}
 
     <div class="portfolio-info">
