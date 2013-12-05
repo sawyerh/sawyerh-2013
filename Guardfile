@@ -1,4 +1,4 @@
-guard 'sass', :input => 'sass', :output => 'css', :smart_partials => true, :style => :compressed
+guard 'sass', :input => 'sass', :output => 'css', :style => :compressed
 
 guard 'livereload' do
   watch(%r{app/views/.+\.(erb|haml|slim)$})
