@@ -6,7 +6,7 @@
     <meta content='[@sawyerh] Brooklyn + Designer + Developer + Cool guy' name='description'>
     <meta content='width=device-width' name='viewport'>
     <link href='/favicon.ico' rel='shortcut icon'>
-    <link href='/css/style.css?v=11222013' rel='stylesheet'>
+    <link href='/css/style.css?v=12052013' rel='stylesheet'>
     <link href="{{site.feed_url}}" rel="alternate" type="application/rss+xml" title="Sawyer Hollenshead - Writing" />
 
     <!--[if lt IE 9]>
@@ -19,6 +19,10 @@
       var _sf_startpt=(new Date()).getTime()
       var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-3634425-8']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
     </script>
+
+    {% if meta.css %}
+      <style type="text/css">{{ meta.css }}</style>
+    {% endif %}
   </head>
   <body{% if slug == 'writing' or parent.slug == 'writing' %} class="blog-page"{% endif %}>
 
