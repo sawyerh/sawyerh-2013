@@ -8,8 +8,8 @@
     <div class='send-to-readmill' data-display='large' data-download-url='{{ meta.epub }}'></div>
     <script>(function() {var st = document.createElement('script'); st.type = 'text/javascript'; st.async = true;st.src = 'https://platform.readmill.com/send.js';var p = document.getElementsByTagName('script')[0]; p.parentNode.insertBefore(st, p);})();</script>
     <br>
-    <a class='book-dl-btn' href='{{ meta.epub }}'>Download ePUB (iOS)</a>
-    <a class='book-dl-btn' href='{{ meta.mobi }}'>Download Kindle</a>
+    <a class='book-dl-btn' href='{{ meta.epub }}' onClick="_gaq.push(['_trackEvent', 'Pocket', 'Downloaded', '{{ title }} ePub']);">Download ePUB (iOS)</a>
+    <a class='book-dl-btn' href='{{ meta.mobi }}' onClick="_gaq.push(['_trackEvent', 'Pocket', 'Downloaded', '{{ title }} Kindle']);">Download Kindle</a>
   </div>
   <div class='book-info'>
     {{body}}
