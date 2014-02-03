@@ -1,8 +1,9 @@
 {% include 'includes/header' %}
-  
+
   <article class="single-post">
     <h1 class="single-post-title">{{title}}</h1>
     <div class="single-post-content">{{body}}</div>
+    <p class="single-post-date">Published on {{date | date: "%B %d, %Y"}}</p>
   </article>
 
 {% include 'includes/footer' %}
