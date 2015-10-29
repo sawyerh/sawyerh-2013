@@ -1,68 +1,86 @@
 /**
- * GitHub theme
+ * Solarized Dark theme
  *
- * @author Craig Campbell
- * @version 1.0.4
+ * Adaptation of Solarized Dark from ethanschoonover.com/solarized
+ *
+ * @author Ethan Schoonover
+ * @author David Litmark
+ * @version 1.0.0
  */
 pre {
+    background: #002b36; /* base03 */
     word-wrap: break-word;
-    padding: 6px 10px;
-    line-height: 19px;
+    margin: 0px;
+    padding: 10px;
+    color: #839496; /* base0 */
+    font-size: 14px;
     margin-bottom: 20px;
 }
 
-pre code {
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
-}
-
-pre, pre code {
-    font-size: 13px;
+pre, code {
+    font-family: 'Monaco', courier, monospace;
 }
 
 pre .comment {
-    color: #998;
+    color: #586e75; /* base01 */
 }
 
-pre .support {
-    color: #0086B3;
+pre .constant {
+    color: #839496; /* base0 */
 }
 
-pre .tag, pre .tag-name {
-    color: navy;
+pre .constant.language {
+    color: #268bd2; /* blue */
 }
 
-pre .keyword, pre .css-property, pre .vendor-prefix, pre .sass, pre .class, pre .id, pre .css-value, pre .entity.function, pre .storage.function {
-    font-weight: bold;
+pre .constant.regexp {
+    color: #2aa198; /* cyan */
 }
 
-pre .css-property, pre .css-value, pre .vendor-prefix, pre .support.namespace {
-    color: #333;
+pre .storage {
+    color: #268bd2; /* blue */
 }
 
-pre .constant.numeric, pre .keyword.unit, pre .hex-color {
-    font-weight: normal;
-    color: #099;
+pre .string, pre .comment.docstring {
+    color: #2aa198; /* cyan */
 }
 
-pre .entity.class {
-    color: #458;
+pre .support.tag.script, pre .support.tag.style {
+    color: #2aa198; /* cyan */
 }
 
-pre .entity.id, pre .entity.function {
-    color: #900;
+pre .string.regexp {
+    color: #2aa198; /* cyan */
 }
 
-pre .attribute, pre .variable {
-    color: teal;
+pre .string.regexp.open, pre .string.regexp.close {
+    color: #2aa198; /* cyan */
 }
 
-pre .string, pre .support.value  {
-    font-weight: normal;
-    color: #d14;
+pre .keyword, pre .selector {
+    color: #859900; /* green */
 }
 
-pre .regexp {
-    color: #009926;
+pre .inherited-class {
+    font-style: italic;
+}
+
+pre .entity {
+    color: #b58900; /* yellow */
+}
+
+pre .support, *[data-language="c"] .function.call {
+    color: #859900; /* green */
+}
+
+pre .support.method {
+    color: #839496; /* base0 */
+}
+
+pre .support.property {
+    color: #839496; /* base0 */
+}
+
+pre .variable.global, pre .variable.class, pre .variable.instance {
+    color: #839496; /* base0 */
 }
