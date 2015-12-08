@@ -1,5 +1,9 @@
 guard 'sass', :input => 'sass', :output => 'css', :style => :compressed
 
+guard :jammit, :output_folder => 'js/dist' do
+  watch(%r{^js/(.*)\.js$})
+end
+
 guard 'livereload' do
   watch(%r{app/views/.+\.(erb|haml|slim)$})
   watch(%r{public/scripts/js/.+\.(css|js|html)})
